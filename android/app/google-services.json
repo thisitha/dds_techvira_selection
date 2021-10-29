@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "465544195534",
+    "project_id": "dds-techvira-selection",
+    "storage_bucket": "dds-techvira-selection.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465544195534:android:b3f7b14828ec14c5a70f9f",
+        "android_client_info": {
+          "package_name": "com.kavinda.dds_techvira"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465544195534-ujalhtnc8olsvhu2t0a3upppallem3n4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kavinda.dds_techvira",
+            "certificate_hash": "c621e761fdeab6dbd7885e36b94e7397cbe2c440"
+          }
+        },
+        {
+          "client_id": "465544195534-s0s9ansg9li1fbgqe336fu0quu07flta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCppu7w4gg90nyOoLMFO8sClP3RLO3i93c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465544195534-s0s9ansg9li1fbgqe336fu0quu07flta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
