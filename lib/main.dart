@@ -1,3 +1,5 @@
+
+
 import 'package:dds_techvira/dashboard.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -134,6 +136,12 @@ class _loginTestState extends State<loginTest> {
 
     AuthResult userDetails = await _firebaseAuth.signInWithCredential(credential);
     //print(userDetails.user.uid.toString());
+    FirebaseUser currentUser = await _firebaseAuth.currentUser();
+    if(currentUser.uid?.isNotEmpty??false){
+      Navigator.push(context, MaterialPageRoute(builder: (context) => dashboard() ));
+    }else{
+
+    }
 
 
   }

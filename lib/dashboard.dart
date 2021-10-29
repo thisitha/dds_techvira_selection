@@ -1,6 +1,8 @@
 import 'dart:convert';
 
+import 'package:dds_techvira/carDetails.dart';
 import 'package:dds_techvira/cars.dart';
+import 'package:dds_techvira/main.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -40,6 +42,10 @@ class _dashboardState extends State<dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [IconButton(icon: Icon(Icons.login), onPressed: (){
+          GoogleSignIn().signOut();
+          Navigator.push(context,MaterialPageRoute(builder: (context) => MyApp()) );
+        })],
         title: Text(
             "Welcome to Dashboard"
         ),
@@ -59,6 +65,12 @@ class _dashboardState extends State<dashboard> {
 
                        return InkWell(
                          onTap: (){
+                           Navigator.push(
+                             context,
+                             MaterialPageRoute(
+                               builder: (context) => carDetails(moreInfo: data[index],),
+                             ),
+                           );
                            print(data[index].name.toString());
                          },
                          child: Card(
